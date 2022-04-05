@@ -10,12 +10,12 @@ function printResults(num) {
     return;
 }
 function addAndHandle(n1, n2, cb) {
-    const result = n1 + n2;
+    var result = n1 + n2;
     cb(result);
 }
-addAndHandle(10, 20, (result) => {
+addAndHandle(10, 20, function (result) {
     console.log(result);
 });
 printLog(adds(1, 2));
-let combineValues = adds;
+var combineValues = adds;
 console.log(combineValues(8, 8));

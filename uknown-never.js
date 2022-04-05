@@ -1,6 +1,6 @@
 "use strict";
-let userInput;
-let userName;
+var userInput;
+var userName;
 userInput = 5;
 userInput = 'kekis';
 if (typeof userInput === 'string') {
@@ -9,11 +9,11 @@ if (typeof userInput === 'string') {
 function generateError(message, code) {
     throw { message: message, errorCode: code };
 }
-const button = document.querySelector('button');
+var button = document.querySelector('button');
 console.log(button, 'kekis');
-const handle = () => {
+var handle = function () {
     console.log('clicker');
 };
-button.addEventListener('click', () => {
+button.addEventListener('click', function () {
     handle();
 });
